@@ -1,7 +1,7 @@
 BEGIN
-    cbw_user.insert_sensitive_data(
-        3,
-        'Inserted from pipeline'
+    cbw_user.insert_data(
+        100,
+        'Inserted from GitHub Actions'
     );
 END;
 /
