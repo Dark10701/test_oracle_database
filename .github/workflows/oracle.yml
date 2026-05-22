@@ -1,0 +1,19 @@
+name: Oracle Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-sql:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Simulate Deployment
+        run: |
+          echo "Running Oracle deployment script"
+          cat database/deploy.sql
